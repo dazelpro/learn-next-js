@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,46 @@ a {
   box-sizing: border-box;
 }
 
+.bgRed {
+  background-color: red;
+}
+
+.bgBlue {
+  background-color: blue;
+}
+
+.sidenav {
+  padding: 10px 30px;
+  background-color: #1C2538;
+  border-radius: 10px;
+}
+
+.sidenav .link {
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 5px;
+}
+
+.active {
+  color:white
+}
+
+.sidenav .link:hover {
+  color: white;
+}
+
+.title-page {
+  font-size: 30px;
+  border-bottom: solid white;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
-    background: black;
+    background: #0F172A;
   }
 }
